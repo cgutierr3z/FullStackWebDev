@@ -26,19 +26,19 @@
               <a class="nav-link " href="./index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/about.html">About Us</a>
+              <a class="nav-link" href="./about.html">About Us</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="./pricing.html">Pricing</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./terms.html">Terms</a>
+              <a class="nav-link" href="/terms.html">Terms</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Job</a>
+              <a class="nav-link" href="./job.html">Job</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./contact.html">Contact</a>
+              <a class="nav-link active" aria-current="page" href="#">Contact</a>
             </li>
           </ul>
         </div>
@@ -48,7 +48,7 @@
 
 
     <div class="jumbotron p-5">
-      <h1> Job </h1>
+      <h1> Contact </h1>
       <h3> Hoteles Eje Cafetero </h3>
     </div>
 
@@ -57,25 +57,62 @@
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb border bg-transparent p-2">
           <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Job</li>
+          <li class="breadcrumb-item active" aria-current="page">Contact</li>
         </ol>
       </nav>
 
-      <span>Viverra ipsum nunc aliquet bibendum. Convallis convallis tellus id
-        interdum velit laoreet. Dis parturient montes nascetur ridiculus. Sit
-        amet venenatis urna cursus. Dui accumsan sit amet nulla facilisi morbi
-        tempus iaculis urna. Morbi tempus iaculis urna id volutpat lacus
-        laoreet. Sed ullamcorper morbi tincidunt ornare massa eget egestas
-        purus. Amet purus gravida quis blandit turpis. Mauris vitae ultricies
-        leo integer malesuada. Ultricies leo integer malesuada nunc. Nunc
-        mattis enim ut tellus. Scelerisque varius morbi enim nunc faucibus a
-        pellentesque sit amet. Vulputate enim nulla aliquet porttitor lacus
-        luctus accumsan tortor posuere. Eleifend quam adipiscing vitae proin.
-        Mattis rhoncus urna neque viverra justo nec. Id semper risus in
-        hendrerit gravida rutrum quisque non. In fermentum posuere urna nec
-        tincidunt praesent semper feugiat. Natoque penatibus et magnis dis
-        parturient. Ut faucibus pulvinar elementum integer enim.
-      </span>
+      <h1>Dejanos tu comentario</h1>
+
+      <form class="row g-3">
+        <div class="col-md-6">
+          <label for="nombre" class="form-label">Nombre:</label>
+          <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
+        </div>
+
+        <div class="col-md-6">
+          <label for="apellido" class="form-label">Apellido:</label>
+          <input type="text" class="form-control" id="apellido" placeholder="Ingrese su apellido">
+        </div>
+
+        <div class="col-12">
+          <label for="email" class="form-label">Email:</label>
+          <input type="email" class="form-control" id="email" placeholder="Ingrese su email">
+        </div>
+
+        <div class="col-md-9">
+          <label for="ciudad" class="form-label">Ciudad:</label>
+          <input type="text" class="form-control" id="ciudad">
+        </div>
+
+        <div class="col-md-3">
+          <label for="estado" class="form-label">Estado:</label>
+          <select id="estado" class="form-select">
+            <option selected>Elegir...</option>
+            <option>Risaralda</option>
+            <option>Caldas</option>
+            <option>Quindio</option>
+          </select>
+        </div>
+
+        <div class="col-12">
+          <label for="comentario" class="form-label">Comentario:</label>
+          <textarea class="form-control" id="comentario" rows=10></textarea>
+        </div>
+
+        <div class="col-auto">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="autoSizingCheck">
+            <label class="form-check-label" for="autoSizingCheck">
+              Quiero que me contacten
+            </label>
+          </div>
+        </div>
+
+        <div class="col-auto">
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </div>
+
+      </form>
 
     </div>
 
