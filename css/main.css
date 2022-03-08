@@ -1,3 +1,4 @@
+
 .jumbotron{
   background-color: #0d7c11;
   color: white;
@@ -30,4 +31,8 @@ footer a{
 
 .footer-social-icon{
   padding-right: 10px;
+}
+
+.tab-content{
+  padding-top: 0;
 }
