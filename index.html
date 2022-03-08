@@ -215,7 +215,7 @@
 
           <div>
             <button type="button" class="btn btn-outline-success btn-sm my-1" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@webdevco">Contacto</button>
-            <button class="btn btn-primary btn-reserve">
+            <button class="btn btn-primary btn-reserve" data-bs-toggle="popover" title="Promociones" data-bs-content="chorrochientos%%%% off">
               <span class="oi oi-dollar"></span>
               Reservar
             </button>
@@ -313,7 +313,12 @@
       var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
         return new bootstrap.Tooltip(tooltipTriggerEl)
       })
+
+      var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+      var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+        return new bootstrap.Popover(popoverTriggerEl)
+      })
     </script>
-    
+
   </body>
 </html>
