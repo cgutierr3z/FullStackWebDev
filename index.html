@@ -59,30 +59,46 @@
         </ol>
       </nav>
 
+      <p>
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample1" aria-expanded="false" aria-controls="multiCollapseExample1">car 01</button>
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">car 02</button>
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample3">car 03</button>
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2"><i class="bi bi-arrows-collapse"></i></button>
+      </p>
       <div class="row">
         <div class="col-sm-4">
-          <p>
-            <h3>car 01</h3>
-            <p>caracteristica 1 caracteristica 1 caracteristica 1</p>
-          </p>
+          <div class="collapse multi-collapse" id="multiCollapseExample1">
+            <div class="card card-body">
+              <p>
+                <h3>car 01</h3>
+                <p>caracteristica 1 caracteristica 1 caracteristica 1</p>
+              </p>
+            </div>
+          </div>
         </div>
-
         <div class="col-sm-4">
-          <p>
-            <h3>car 02</h3>
-            <p>caracteristica 2 caracteristica 2 caracteristica 2 </p>
-          </p>
+          <div class="collapse multi-collapse" id="multiCollapseExample2">
+            <div class="card card-body">
+              <p>
+                <h3>car 02</h3>
+                <p>caracteristica 2 caracteristica 2 caracteristica 2 </p>
+              </p>
+            </div>
+          </div>
         </div>
-
         <div class="col-sm-4">
-          <p>
-            <h3>car 03</h3>
-            <p>caracteristica 3 aracteristica 3 aracteristica 3 </p>
-          </p>
+          <div class="collapse multi-collapse" id="multiCollapseExample3">
+            <div class="card card-body">
+              <p>
+                <h3>car 03</h3>
+                <p>caracteristica 3 aracteristica 3 aracteristica 3 </p>
+              </p>
+            </div>
+          </div>
         </div>
       </div>
 
-      <br />
+    
 
       <img src="https://picsum.photos/900/200?random=1" class="img-fluid" alt="">
 
