@@ -1,13 +1,20 @@
+$yellow: #1a932a;
+
+@mixin margins($top,$bottom){
+  margin-top: $top;
+  margin-botton: $bottom;
+}
+
 .jumbotron{
-  background-color: #0d7c11;
+  background-color: $yellow;
   color: white;
-  margin-top: 50px;
+  @include margins(50px,0px);
 }
 
 footer{
   padding: 10px 10px 0 10px;
-  background-color: #0d7c11;
-  margin: 10px 0 0 0;
+  background-color: $yellow;
+  @include margins(10px,0px);
   color: white;
 }
 
@@ -17,7 +24,7 @@ footer a{
 
 .card-hotel{
   flex: 1 200px;
-  margin-top: 10px;
+  @include margins(10px,0px);
 }
 
  .btn-reserve{
