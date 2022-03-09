@@ -256,7 +256,7 @@
           </div>
 
           <div>
-            <button type="button" class="btn btn-outline-success btn-sm my-1" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@webdevco">Contacto</button>
+            <button type="button" class="btn btn-outline-success btn-sm my-1" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@webdevco" id="contactoBtn">Contacto</button>
             <button class="btn btn-primary btn-reserve">
               <span class="oi oi-dollar"></span>
               Reservar
@@ -334,20 +334,47 @@
     -->
 
     <script>
-      var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-        return new bootstrap.Tooltip(tooltipTriggerEl)
-      });
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+          return new bootstrap.Tooltip(tooltipTriggerEl)
+        });
 
-      var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
-      var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
-        return new bootstrap.Popover(popoverTriggerEl)
-      });
+        var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+        var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+          return new bootstrap.Popover(popoverTriggerEl)
+        });
 
-      var myCarousel = document.querySelector('#carouselExampleIndicators')
-      var carousel = new bootstrap.Carousel(myCarousel, {
-        interval: 500
-      })
+        var myCarousel = document.querySelector('#carouselExampleIndicators')
+        var carousel = new bootstrap.Carousel(myCarousel, {
+          interval: 500
+        });
+
+        var button = document.getElementById('contactoBtn');
+        var bsButton = new bootstrap.Button(button);
+
+        var myModalEl = document.getElementById('exampleModal');
+        myModalEl.addEventListener('show.bs.modal', function (event) {
+          // do something...
+          console.log('hello world');
+          console.log(button.attributes);
+          //button.removeClass('btn-outline-success');
+          //button.addClass('btn btn-outline-secondary');
+          button.classList.remove("btn-outline-success");
+          button.classList.add("btn-secondary");
+          button.setAttribute('disabled', true);
+        });
+        myModalEl.addEventListener('hidden.bs.modal', function (event) {
+          // do something...
+          button.classList.remove("btn-secondary");
+          button.classList.add("btn-outline-success");
+          button.removeAttribute('disabled');
+          console.log('bye bye world');
+        });
+
+
+
+
+
 
     </script>
 
