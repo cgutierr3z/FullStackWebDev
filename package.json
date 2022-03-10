@@ -10,7 +10,7 @@
     "scss": "node-sass -o css/ css/",
     "watch:scss": "onchange 'css/*.scss' -- npm run scss ",
     "clean": "rimraf dist",
-    "usemin": "usemin about.html -d dist -o dist/about.html --htmlmin true --rmlr truenp",
+    "usemin": "usemin index.html -d dist -o dist/index.html --htmlmin true --rmlr truenp",
     "build": "npm run clean && npm run scss && npm run usemin"
   },
   "repository": {
