@@ -1,5 +1,5 @@
 # Curso WebDev con Bootstrap 4 - Coursera
-- https://cgutierr3z.github.io/FullStackWebDev/
+- Preview del proyecto: https://cgutierr3z.github.io/FullStackWebDev/
 
 - Archivos de proyecto del curso de diseño web con bootstrap 4, https://www.coursera.org/learn/disenando-paginas-bootstrap4.
 
