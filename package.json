@@ -25,19 +25,36 @@
   "homepage": "https://bitbucket.org/cgutierr3z/git_test#readme",
   "devDependencies": {
     "cssmin": "^0.4.3",
+    "grunt": "^1.0.3",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-clean": "^1.1.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^2.2.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^4.0.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-filerev": "^2.3.1",
+    "grunt-usemin": "^3.1.1",
     "htmlmin": "^0.0.7",
+    "jit-grunt": "^0.10.0",
     "lite-server": "^2.4.0",
     "node-sass": "^4.9.3",
     "onchange": "^4.1.0",
     "rimraf": "^2.6.2",
+    "ruby": "^0.6.1",
+    "sass": "^1.49.9",
+    "time-grunt": "^1.4.0",
     "uglifyjs": "^2.4.11",
     "usemin-cli": "^0.5.1"
   },
   "dependencies": {
     "bootstrap": "^4.1.2",
+    "bufferutil": "^4.0.1",
     "concurrently": "^4.0.1",
     "jquery": "^3.3.1",
     "open-iconic": "^1.1.1",
-    "popper.js": "^1.16.1"
+    "popper.js": "^1.16.1",
+    "utf-8-validate": "^5.0.2"
   }
 }
