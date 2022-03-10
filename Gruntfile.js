@@ -152,6 +152,5 @@ module.exports = function (grunt) {
     'uglify',
     'filerev',
     'usemin'
-
   ])
 };
